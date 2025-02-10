@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #000;
+    overflow: hidden;
+   touch-action: none;
+}
+
+h2 {
+    font-size: 4em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 50px;
+
+}
+
+.cursor {
+    height: 200px;
+    width: 200px;
+    background: url('letter.jpg') center/cover no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+        padding: 30px;
+    }
+
+    .cursor {
+        height: 150px;
+        width: 150px;
+    }
+}
